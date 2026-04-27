@@ -44,7 +44,7 @@
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const data = new FormData(form);
-      const to = form.dataset.mailtoTo || 'williamsdmike00@gmail.com';
+      const to = form.dataset.mailtoTo || 'contact@legacymademedia.net';
       const subject = form.dataset.mailtoSubject || 'Legacy Made Media — Inquiry';
 
       const lines = [];

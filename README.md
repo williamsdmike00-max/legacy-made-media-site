@@ -39,7 +39,7 @@ Vercel auto-deploys on push to `main`.
 
 ## Contact
 - **Call/Text:** 817-507-4553
-- **Email:** williamsdmike00@gmail.com
+- **Email:** contact@legacymademedia.net
 - **Area:** Dallas–Fort Worth (serving the US)
 - **Booking:** https://legacymademedia.net/m/bookings
 - **Hours:** 9:00 AM – 5:00 PM CT
