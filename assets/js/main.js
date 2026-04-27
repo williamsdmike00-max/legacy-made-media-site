@@ -61,7 +61,7 @@
 
       const status = form.querySelector('[data-form-status]');
       if (status) {
-        status.textContent = 'Opening your email app… if nothing happens, email williamsdmike00@gmail.com directly.';
+        status.textContent = 'Opening your email app… if nothing happens, email contact@legacymademedia.net directly.';
         status.style.color = 'var(--yellow)';
       }
     });
