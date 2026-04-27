@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Showcase — Legacy Made Media</title>
+  <meta name="description" content="The work, the system, the cinematic version. A premium showcase of how Legacy Made Media installs growth systems for local businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/cinematic.css" />
+</head>
+<body class="cinematic">
+
+  <!-- Background blobs -->
+  <div class="cn-blob cn-blob--blue"></div>
+  <div class="cn-blob cn-blob--magenta"></div>
+  <div class="cn-blob cn-blob--yellow"></div>
+
+  <!-- Particle canvas -->
+  <canvas class="cn-canvas"></canvas>
+
+  <!-- Custom cursor -->
+  <div class="cn-cursor"></div>
+  <div class="cn-cursor-ring"></div>
+
+  <!-- Back to home -->
+  <a href="index.html" class="cn-back" data-cursor>← Back to Legacy Made Media</a>
+
+  <!-- HERO -->
+  <section class="cn-hero">
+    <div class="cn-orbit">
+      <svg viewBox="0 0 800 800" fill="none">
+        <g class="cn-orbit__ring-1">
+          <circle cx="400" cy="400" r="380" stroke="rgba(0, 102, 255, 0.18)" stroke-width="1" />
+          <circle cx="400" cy="20" r="6" fill="#0066FF" />
+        </g>
+        <g class="cn-orbit__ring-2">
+          <circle cx="400" cy="400" r="280" stroke="rgba(255, 46, 147, 0.22)" stroke-width="1" stroke-dasharray="4 8" />
+          <circle cx="120" cy="400" r="4" fill="#FF2E93" />
+        </g>
+        <g class="cn-orbit__ring-3">
+          <circle cx="400" cy="400" r="180" stroke="rgba(255, 214, 10, 0.18)" stroke-width="1" />
+          <circle cx="580" cy="400" r="3" fill="#FFD60A" />
+        </g>
+        <circle cx="400" cy="400" r="60" fill="url(#core)" />
+        <defs>
+          <radialGradient id="core" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0%" stop-color="#3D8BFF" stop-opacity="0.6" />
+            <stop offset="100%" stop-color="#FF2E93" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="cn-hero__inner">
+      <span class="cn-hero__eyebrow">Showcase · 2026</span>
+      <h1 class="cn-hero__title">
+        <span><span class="cn-word">Premium</span> <span class="cn-word">digital</span></span>
+        <span><span class="cn-word">systems.</span></span>
+        <span><span class="cn-word">Built</span> <span class="cn-word">like</span> <span class="cn-word" style="color: var(--yellow);">cinema.</span></span>
+      </h1>
+      <p class="cn-hero__sub">
+        We don't ship websites. We install growth machines — engineered to capture every lead, follow up while you sleep, and answer every call before the competition does.
+      </p>
+      <div class="cn-hero__ctas">
+        <a href="contact.html" class="cn-magnet" data-cursor>
+          Book the build
+          <span style="font-size:18px;">→</span>
+        </a>
+        <a href="services.html" class="cn-magnet cn-magnet--ghost" data-cursor>See the services</a>
+      </div>
+    </div>
+
+    <div class="cn-scroll-cue">Scroll</div>
+  </section>
+
+  <!-- TILT CARDS -->
+  <section class="cn-section">
+    <div class="cn-reveal">
+      <span class="cn-eyebrow">What we install</span>
+      <h2 class="cn-h2">Four pieces. <br/>Engineered to compound.</h2>
+      <p class="cn-section__lead">Every install is the same shape — only the calibration changes. Each piece feeds the next: the website captures, the automation follows up, the AI answers, the GBP brings them in.</p>
+    </div>
+
+    <div class="cn-tilt-grid">
+      <div class="cn-tilt cn-reveal" data-cursor>
+        <div class="cn-tilt__num">01</div>
+        <div class="cn-tilt__icon">◢</div>
+        <h3 class="cn-tilt__title">Conversion-engineered website</h3>
+        <p class="cn-tilt__desc">Mobile-first. Sub-2-second load. Built around your single best offer with click-to-call and form capture wired into the CRM from day one.</p>
+      </div>
+
+      <div class="cn-tilt cn-reveal" data-cursor>
+        <div class="cn-tilt__num">02</div>
+        <div class="cn-tilt__icon">◆</div>
+        <h3 class="cn-tilt__title">60-second follow-up automation</h3>
+        <p class="cn-tilt__desc">Every lead gets an SMS and email within a minute. Then a 30-day nurture sequence. Then a missed-call text-back. The leak is sealed.</p>
+      </div>
+
+      <div class="cn-tilt cn-reveal" data-cursor>
+        <div class="cn-tilt__num">03</div>
+        <div class="cn-tilt__icon">◉</div>
+        <h3 class="cn-tilt__title">AI voice that picks up at 2am</h3>
+        <p class="cn-tilt__desc">Custom-trained on your services and pricing. Books appointments straight to your calendar. Texts you a transcript before the call ends.</p>
+      </div>
+
+      <div class="cn-tilt cn-reveal" data-cursor>
+        <div class="cn-tilt__num">04</div>
+        <div class="cn-tilt__icon">◇</div>
+        <h3 class="cn-tilt__title">Local map-pack dominance</h3>
+        <p class="cn-tilt__desc">Google Business Profile optimization, automated review requests, weekly posts. The compounding flywheel that pulls high-intent calls in for free.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="cn-marquee" data-cursor>
+    <div class="cn-marquee__track">
+      <span class="cn-marquee__word">CAPTURE.</span>
+      <span class="cn-marquee__word cn-marquee__word--solid">RESPOND.</span>
+      <span class="cn-marquee__word">QUALIFY.</span>
+      <span class="cn-marquee__word cn-marquee__word--magenta">BOOK.</span>
+      <span class="cn-marquee__word">DELIVER.</span>
+      <span class="cn-marquee__word cn-marquee__word--solid">REPEAT.</span>
+      <!-- repeat for seamless loop -->
+      <span class="cn-marquee__word">CAPTURE.</span>
+      <span class="cn-marquee__word cn-marquee__word--solid">RESPOND.</span>
+      <span class="cn-marquee__word">QUALIFY.</span>
+      <span class="cn-marquee__word cn-marquee__word--magenta">BOOK.</span>
+      <span class="cn-marquee__word">DELIVER.</span>
+      <span class="cn-marquee__word cn-marquee__word--solid">REPEAT.</span>
+    </div>
+  </div>
+
+  <!-- COUNTERS -->
+  <section class="cn-section">
+    <div class="cn-reveal">
+      <span class="cn-eyebrow">The numbers</span>
+      <h2 class="cn-h2">Built for the math.</h2>
+      <p class="cn-section__lead">Every install is engineered around the operator economics of trade businesses. The system has to pay for itself fast — or it doesn't ship.</p>
+    </div>
+
+    <div class="cn-counter-grid cn-reveal-stagger">
+      <div class="cn-counter">
+        <div class="cn-counter__num"><span data-count="24" data-suffix="/7">0</span></div>
+        <div class="cn-counter__label">Calls Answered</div>
+      </div>
+      <div class="cn-counter">
+        <div class="cn-counter__num"><span data-count="60" data-prefix="<" data-suffix="s">0</span></div>
+        <div class="cn-counter__label">First Follow-Up</div>
+      </div>
+      <div class="cn-counter">
+        <div class="cn-counter__num"><span data-count="14" data-suffix="d">0</span></div>
+        <div class="cn-counter__label">Build to Live</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT FEELS -->
+  <section class="cn-section">
+    <div class="cn-reveal">
+      <span class="cn-eyebrow">The experience</span>
+      <h2 class="cn-h2">Strategy call <br/>to live system <span style="background: linear-gradient(120deg, var(--blue-glow), var(--magenta)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">in 14 days.</span></h2>
+      <p class="cn-section__lead">No 90-day discovery phases. No 12-week handoffs to a "creative team." A diagnostic call, a fixed quote, a build, a launch. Then we run it for you.</p>
+    </div>
+
+    <div class="cn-tilt-grid">
+      <div class="cn-tilt cn-reveal" data-cursor>
+        <div class="cn-tilt__num">DAY 0–1</div>
+        <h3 class="cn-tilt__title">Strategy call</h3>
+        <p class="cn-tilt__desc">30 minutes. We diagnose your biggest leak. We quote a fixed package. You sign or you don't — no chase, no follow-up.</p>
+      </div>
+      <div class="cn-tilt cn-reveal" data-cursor>
+        <div class="cn-tilt__num">DAY 2–7</div>
+        <h3 class="cn-tilt__title">Build week</h3>
+        <p class="cn-tilt__desc">Website built. Automations wired. AI trained on your services. Day 7 you see a full preview — one round of edits, then we ship.</p>
+      </div>
+      <div class="cn-tilt cn-reveal" data-cursor>
+        <div class="cn-tilt__num">DAY 8–14</div>
+        <h3 class="cn-tilt__title">Live + tuned</h3>
+        <p class="cn-tilt__desc">System launches. We monitor every lead in week one. Tune the automations, sharpen the AI, calibrate the GBP. By day 14 it runs.</p>
+      </div>
+      <div class="cn-tilt cn-reveal" data-cursor>
+        <div class="cn-tilt__num">DAY 15+</div>
+        <h3 class="cn-tilt__title">We run it for you</h3>
+        <p class="cn-tilt__desc">Monthly performance report. Bi-weekly optimization calls on Full System. You go back to running the business. The leads keep arriving.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTRO -->
+  <section class="cn-outro">
+    <div class="cn-reveal">
+      <h2 class="cn-outro__title">
+        Stop missing leads.<br/>
+        <span class="cn-outro__title-gradient">Start owning the market.</span>
+      </h2>
+      <p class="cn-outro__sub">
+        30-minute strategy call. We diagnose. We quote. You decide. Free.
+      </p>
+      <a href="contact.html" class="cn-magnet" data-cursor>
+        Book a strategy call
+        <span style="font-size:18px;">→</span>
+      </a>
+      <div style="margin-top: 32px; font-size: 13px; color: var(--text-dim);">
+        or call <a href="tel:+18777566334" style="color: var(--yellow); font-weight: 600;" data-cursor>(877) 756-6334</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/cinematic.js"></script>
+</body>
+</html>
