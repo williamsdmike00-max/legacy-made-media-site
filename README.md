@@ -1,29 +1,45 @@
 # Legacy Made Media
 
-Static site for Legacy Made Media — done-for-you AI growth systems for local trade businesses.
+Static site for Legacy Made Media — Web + AI + Branding for small businesses. Veteran-owned, Dallas–Fort Worth area.
+
+**Tagline:** Build. Automate. Grow.
+**Promise:** More customers. Stronger business.
 
 ## Pages
-- `index.html` — Homepage (agency hero + services preview + course teaser)
-- `services.html` — Service packages and pricing
-- `about.html` — Founder story and operating principles
-- `contact.html` — Contact form + phone + booking link
+- `index.html` — Homepage (hero, 3-tier pricing teaser, trust chips, course teaser, BUILD/AUTOMATE/GROW)
+- `services.html` — 3-tier pricing ($399 / $799 / $1,299) + add-ons + FAQ
+- `about.html` — Veteran-owned story + operating principles
+- `contact.html` — Phone, email, form, booking link
 - `course.html` — *AI Automation for Small Businesses* — $49.99 (Etsy listing)
 - `cinematic.html` — Motion-graphics showcase
+
+## Pricing (Founders — First 10 Clients Only)
+| Package | Price | Includes |
+|---|---|---|
+| Basic Website | $399 | 1-page, mobile, contact form, fast launch |
+| Deluxe Website | $799 | Multi-page, services/pricing, quote forms, gallery |
+| Premium Website + AI | $1,299 | Deluxe + AI lead capture / receptionist + booking automation |
+
+### Add-Ons
+- Logo + Brand Kit — $149
+- AI Lead Capture Setup Only — $499
+- Social Media Graphics Pack — $99
+- Monthly Updates / Support — Custom Quote
 
 ## Stack
 Static HTML + CSS + JS. No build step. Deployed on Vercel.
 
 ## Deploy
 Vercel auto-deploys on push to `main`.
-- Local preview: open any `.html` in your browser
-- Live: pushed to `main` → Vercel rebuilds → live in ~20s
+- Local preview: open any `.html` in your browser (clean URLs work via vercel.json)
+- Live: push to `main` → Vercel rebuilds → live in ~20s
 
-## Buy link
-The course buy buttons point to:
+## Course Buy Link
 `https://www.etsy.com/listing/4489433334/ai-automation-course-for-small-business`
 
 ## Contact
-- Toll-free: (877) 756-6334
-- Dallas: (214) 301-5403
-- Email: williamsdmike00@gmail.com
-- Booking: https://legacymademedia.net/m/bookings
+- **Call/Text:** 817-507-4553
+- **Email:** williamsdmike00@gmail.com
+- **Area:** Dallas–Fort Worth (serving the US)
+- **Booking:** https://legacymademedia.net/m/bookings
+- **Hours:** 9:00 AM – 5:00 PM CT
