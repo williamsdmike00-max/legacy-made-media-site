@@ -780,8 +780,8 @@ img.nav__logo-mark {
   margin-bottom: 28px;
 }
 .hero__logo img {
-  width: 140px;
-  height: 140px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
   filter:
@@ -790,8 +790,8 @@ img.nav__logo-mark {
 }
 @media (max-width: 640px) {
   .hero__logo img {
-    width: 110px;
-    height: 110px;
+    width: 55px;
+    height: 55px;
   }
 }
 
