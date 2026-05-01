@@ -83,13 +83,6 @@ p { color: var(--text-dim); }
 .text-magenta { color: var(--magenta); }
 .text-white { color: var(--text); }
 
-.gradient-text {
-  background: linear-gradient(120deg, var(--blue-glow) 0%, var(--magenta) 50%, var(--yellow) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* ==================== NAV ==================== */
 
 .nav {
@@ -760,6 +753,17 @@ p { color: var(--text-dim); }
   background: linear-gradient(135deg, var(--blue) 0%, var(--green) 100%) !important;
   color: var(--ink) !important;
   letter-spacing: -0.05em;
+}
+
+/* When the logo mark is the actual logo image, drop the placeholder
+   gradient and clip to a circle to match the brand mark. */
+img.nav__logo-mark {
+  background: transparent !important;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 36px;
+  height: 36px;
+  padding: 0;
 }
 
 /* ==================== FOUNDERS RIBBON ==================== */
