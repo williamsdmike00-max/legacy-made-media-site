@@ -38,7 +38,7 @@ Vercel auto-deploys on push to `main`.
 `https://www.etsy.com/listing/4489433334/ai-automation-course-for-small-business`
 
 ## Contact
-- **Call/Text:** 817-507-4553
+- **Call/Text:** 817-767-4252
 - **Email:** contact@legacymademedia.net
 - **Area:** Dallas–Fort Worth (serving the US)
 - **Booking:** https://legacymademedia.net/m/bookings
