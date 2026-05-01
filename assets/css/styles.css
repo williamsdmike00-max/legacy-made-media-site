@@ -761,9 +761,38 @@ img.nav__logo-mark {
   background: transparent !important;
   border-radius: 50%;
   object-fit: cover;
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   padding: 0;
+}
+
+/* Bigger logo in the footer where there's more breathing room. */
+.footer img.nav__logo-mark {
+  width: 64px;
+  height: 64px;
+}
+
+/* Prominent hero logo — the first thing visitors see, with a soft
+   brand-colored glow so it pops on the dark background. */
+.hero__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+.hero__logo img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter:
+    drop-shadow(0 0 30px rgba(0, 102, 255, 0.45))
+    drop-shadow(0 0 60px rgba(168, 255, 20, 0.18));
+}
+@media (max-width: 640px) {
+  .hero__logo img {
+    width: 110px;
+    height: 110px;
+  }
 }
 
 /* ==================== FOUNDERS RIBBON ==================== */
