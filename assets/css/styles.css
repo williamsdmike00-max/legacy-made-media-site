@@ -946,11 +946,14 @@ img.nav__logo-mark {
   line-height: 1.3;
 }
 
-/* Updated gradient-text to match flyer (blue → green → yellow) */
+/* gradient-text: brand gradient clipped to the text shape (blue → green → yellow).
+   Use background-image (not the `background` shorthand) so background-clip
+   isn't reset to its initial value. */
 .gradient-text {
-  background: linear-gradient(120deg, var(--blue-glow) 0%, var(--green) 50%, var(--yellow) 100%) !important;
+  background-image: linear-gradient(120deg, var(--blue-glow) 0%, var(--green) 50%, var(--yellow) 100%);
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
