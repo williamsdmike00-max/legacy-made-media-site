@@ -6,12 +6,19 @@ Static site for Legacy Made Media — Web + AI + Branding for small businesses. 
 **Promise:** More customers. Stronger business.
 
 ## Pages
-- `index.html` — Homepage (hero, 3-tier pricing teaser, trust chips, course teaser, BUILD/AUTOMATE/GROW)
+- `index.html` — Homepage (hero, 3-tier website pricing teaser, trust chips, AI Ladder section [#ai-ladder], BUILD/AUTOMATE/GROW)
 - `services.html` — 3-tier pricing ($399 / $799 / $1,299) + add-ons + FAQ
 - `about.html` — Veteran-owned story + operating principles
 - `contact.html` — Phone, email, form, booking link
-- `course.html` — *AI Automation for Small Businesses* — $49.99 (Etsy listing)
+- `course.html` — *AI Automation for Small Businesses* — $77 (Etsy listing)
 - `cinematic.html` — Motion-graphics showcase
+
+## AI Ladder (Etsy products surfaced on homepage)
+| Tier | Product | Price | Etsy listing |
+|---|---|---|---|
+| Starter | 25 AI Prompts — Vol. 01 | $4.99 | 4506387476 |
+| Expanded | 50 AI Prompts — Vol. 02 | $9.99 | 4506418579 |
+| Premium | AI Automation Course | $77 | 4489433334 |
 
 ## Pricing (Founders — First 10 Clients Only)
 | Package | Price | Includes |
