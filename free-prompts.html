@@ -73,7 +73,7 @@
                PDF download link to the submitter's email automatically.
                Plan: pipe Formspree → Zapier → GHL contact create for CRM sync. -->
 
-          <form id="lm-leadform" action="https://formspree.io/f/xjgzgood" method="POST" onsubmit="return handleSubmit(event)">
+          <form id="lm-leadform" action="https://formspree.io/f/xjgzgood" method="POST">
             <div style="margin-bottom: 18px;">
               <label for="first_name" style="display:block; font-size:13px; font-weight:600; color:var(--text-dim); margin-bottom:8px; text-transform:uppercase; letter-spacing:0.12em;">First name</label>
               <input type="text" id="first_name" name="first_name" required placeholder="Mike"
@@ -86,16 +86,9 @@
             </div>
             <button type="submit" class="btn btn-accent btn-xl" style="width:100%; justify-content:center;">Send Me the Free Preview →</button>
             <p style="margin-top: 14px; font-size: 12px; color: var(--text-dim); text-align:center; line-height: 1.5;">
-              No spam. Unsubscribe anytime. Instant PDF delivery via email.
+              No spam. Unsubscribe anytime. Instant PDF on the next screen.
             </p>
           </form>
-
-          <!-- Success message (hidden until form submits) -->
-          <div id="lm-success" style="display:none; text-align:center; padding: 20px 0;">
-            <div style="font-size:48px; margin-bottom: 12px;">✓</div>
-            <h3 class="card__title" style="margin-bottom: 12px;">Check your email!</h3>
-            <p class="card__desc">We just sent your free preview of 25 AI Prompts to the email above. If you don't see it in 2 minutes, check your spam folder.</p>
-          </div>
 
         </div>
       </div>
@@ -231,40 +224,6 @@
     <a href="contact.html" class="btn btn-primary btn-sm">Book Free Call →</a>
   </div>
 
-  <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      const form = document.getElementById('lm-leadform');
-      const success = document.getElementById('lm-success');
-
-      const formData = new FormData(form);
-      const data = {
-        first_name: formData.get('first_name'),
-        email: formData.get('email'),
-        source: 'lmm-free-prompts',
-      };
-
-      fetch(form.action, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'  // Tell Formspree to return JSON, not redirect
-        },
-        body: JSON.stringify(data),
-      }).then(res => {
-        if (res.ok) {
-          form.style.display = 'none';
-          success.style.display = 'block';
-        } else {
-          alert('Hmm — something went wrong on our end. Email contact@legacymademedia.net and we\'ll send the PDF manually.');
-        }
-      }).catch(() => {
-        alert('Network error. Email contact@legacymademedia.net and we\'ll send the PDF manually.');
-      });
-
-      return false;
-    }
-  </script>
   <script src="assets/js/main.js"></script>
   <!-- LeadConnector chat widget — A2P 10DLC opt-in capture -->
   <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a07b8d30d644480b24b1e5e" data-source="WEB_USER"></script>
