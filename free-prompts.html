@@ -73,7 +73,7 @@
                PDF download link to the submitter's email automatically.
                Plan: pipe Formspree → Zapier → GHL contact create for CRM sync. -->
 
-          <form id="lm-leadform" action="https://formspree.io/f/xjgzgood" method="POST">
+          <form id="lm-leadform" action="https://formspree.io/f/xjgzgood" method="POST" onsubmit="return handleSubmit(event)">
             <div style="margin-bottom: 18px;">
               <label for="first_name" style="display:block; font-size:13px; font-weight:600; color:var(--text-dim); margin-bottom:8px; text-transform:uppercase; letter-spacing:0.12em;">First name</label>
               <input type="text" id="first_name" name="first_name" required placeholder="Mike"
@@ -84,11 +84,20 @@
               <input type="email" id="email" name="email" required placeholder="you@yourbusiness.com"
                 style="width:100%; padding:14px 16px; border:1px solid rgba(255,255,255,0.22); background:rgba(0,0,0,0.25); color:#fff; border-radius:8px; font-size:16px; font-family:inherit;" />
             </div>
-            <button type="submit" class="btn btn-accent btn-xl" style="width:100%; justify-content:center;">Send Me the Free Preview →</button>
+            <button id="lm-submit-btn" type="submit" class="btn btn-accent btn-xl" style="width:100%; justify-content:center;">Send Me the Free Preview →</button>
             <p style="margin-top: 14px; font-size: 12px; color: var(--text-dim); text-align:center; line-height: 1.5;">
-              No spam. Unsubscribe anytime. Instant PDF on the next screen.
+              No spam. Unsubscribe anytime. PDF unlocks instantly.
             </p>
           </form>
+
+          <!-- Success state — appears in place of the form after submit -->
+          <div id="lm-success" style="display:none; text-align:center; padding: 10px 0;">
+            <div style="font-size:64px; line-height:1; margin-bottom: 16px;">✓</div>
+            <h3 class="card__title" style="margin-bottom: 12px;">You're in — your preview is ready.</h3>
+            <p class="card__desc mb-3" style="margin-bottom: 24px;">Click below to download. We'll send occasional updates, never spam.</p>
+            <a href="/assets/files/Free-Preview-25-AI-Prompts.pdf" download class="btn btn-accent btn-xl" style="width:100%; justify-content:center; font-size: 18px;">⬇ Download the PDF</a>
+            <p style="margin-top: 14px; font-size: 12px; color: var(--text-dim);">Free-Preview-25-AI-Prompts.pdf · 468 KB</p>
+          </div>
 
         </div>
       </div>
@@ -224,6 +233,40 @@
     <a href="contact.html" class="btn btn-primary btn-sm">Book Free Call →</a>
   </div>
 
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('lm-leadform');
+      const btn = document.getElementById('lm-submit-btn');
+      const success = document.getElementById('lm-success');
+
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },  // Formspree returns JSON instead of redirecting
+        body: formData,
+      }).then(res => {
+        if (res.ok) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+        } else {
+          btn.disabled = false;
+          btn.textContent = 'Send Me the Free Preview →';
+          alert('Hmm — something went wrong. Email contact@legacymademedia.net and we\'ll send the PDF manually.');
+        }
+      }).catch(() => {
+        btn.disabled = false;
+        btn.textContent = 'Send Me the Free Preview →';
+        alert('Network error. Email contact@legacymademedia.net and we\'ll send the PDF manually.');
+      });
+
+      return false;
+    }
+  </script>
   <script src="assets/js/main.js"></script>
   <!-- LeadConnector chat widget — A2P 10DLC opt-in capture -->
   <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a07b8d30d644480b24b1e5e" data-source="WEB_USER"></script>
