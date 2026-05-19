@@ -68,12 +68,17 @@
       <div class="grid grid-2" style="max-width: 720px; margin: 40px auto 0; align-items:start;">
         <div class="card card--accent" style="padding: 40px 32px; background: linear-gradient(135deg, rgba(0,102,255,0.12) 0%, rgba(168,255,20,0.12) 100%); border-color: rgba(255,255,255,0.22); grid-column: 1 / -1;">
 
-          <!-- Form submits to Formspree (free tier, 50 submissions/mo).
-               Auto-response (configured in the Formspree dashboard) sends the
-               PDF download link to the submitter's email automatically.
-               Plan: pipe Formspree → Zapier → GHL contact create for CRM sync. -->
+          <!-- Form submits to Web3Forms (free tier, 250 submissions/mo, unlimited
+               on paid). Notification emails go to contact@legacymademedia.net.
+               Plan: pipe submissions → GHL contact create via a custom Vercel
+               serverless function for CRM sync (later). -->
 
-          <form id="lm-leadform" action="https://formspree.io/f/xjgzgood" method="POST" onsubmit="return handleSubmit(event)">
+          <form id="lm-leadform" action="https://api.web3forms.com/submit" method="POST" onsubmit="return handleSubmit(event)">
+            <input type="hidden" name="access_key" value="1acdb01f-86da-4d16-8674-ee1608559893" />
+            <input type="hidden" name="subject" value="New LMM Free Preview Lead" />
+            <input type="hidden" name="from_name" value="LMM Lead Capture" />
+            <input type="hidden" name="source" value="legacymademedia.net/free-prompts" />
+            <input type="checkbox" name="botcheck" style="display:none !important;" tabindex="-1" autocomplete="off" />
             <div style="margin-bottom: 18px;">
               <label for="first_name" style="display:block; font-size:13px; font-weight:600; color:var(--text-dim); margin-bottom:8px; text-transform:uppercase; letter-spacing:0.12em;">First name</label>
               <input type="text" id="first_name" name="first_name" required placeholder="Mike"
